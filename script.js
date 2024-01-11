@@ -132,3 +132,10 @@ resetFilterBtn.addEventListener("click", resetFilter);
 saveImgBtn.addEventListener("click", saveImage);
 fileInput.addEventListener("change", loadImage);
 chooseImgBtn.addEventListener("click", () => fileInput.click());
+function clicktoremove() {
+  fileInput.value = "";
+  previewImg.src = "https://ajay-dhangar.github.io/Image-Editor/image-placeholder.svg";
+  document.querySelector(".container").classList.add("disable");
+  resetFilter();
+}
+
